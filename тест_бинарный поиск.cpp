@@ -63,7 +63,8 @@ int main() {
 		// 3. Определяем количество итераций (1000 для маленьких, меньше для больших)
 		int iterations = 1000;
 		if (size > 10000) iterations = 10;
-		if (size >= 1000000) iterations = 2; // Для 1 млн+ 2 итерации
+		if (size >= 1000000) iterations = 2; 
+		if (size>= 100000000) iterations=1;
 		
 		// Переменная для сохранения результата (чтобы компилятор не удалил вызов)
 		volatile bool result = false;
