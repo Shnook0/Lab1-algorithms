@@ -57,7 +57,7 @@ int main() {
 		vector<int> a1;
 		a1.reserve(size);
 		for (int i = 0; i < size; ++i) {
-			a1.push_back(2 * i + 2); // 2, 4, 6, 8...
+			a1.push_back(2 * i * (100000000 / size) + 2);
 		}
 		
 		// 3. Определяем количество итераций (1000 для маленьких, меньше для больших)
