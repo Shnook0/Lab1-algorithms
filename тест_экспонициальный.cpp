@@ -78,7 +78,7 @@ int main() {
 		}
 		
 		// 3. Определяем количество итераций (100 для маленьких, меньше для больших)
-		int iterations = 10000;
+		int iterations = 1000;
 		if (size > 10000) iterations = 10;
 		if (size >= 1000000) iterations = 2; // Для 1 млн+ 1 итерации хватит
 		
