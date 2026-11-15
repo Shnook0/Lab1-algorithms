@@ -28,7 +28,7 @@ bool exponential_search(vector<int>& a1,vector<int>& a2){
 	int step=1;
 	int added=step-1;
 	for (auto i :a1){
-		while (a2[start+added]<i and (start+added)<lena2){
+		while ((start+added)<lena2 and a2[start+added]<i ){
 			step=step*2;
 			added=step-1;}
 		if ((start+added)<lena2){

@@ -6,7 +6,7 @@ int binpoisk(const vector<int>& array,int find){
 	int r=(int)array.size()-1;
 	if (r==-1) return -1;
 	int l=0;
-	int pivot=(int)array.size()/2;
+	int pivot=(r+l)/2
 	while(l!=r){
 		if (array[pivot]<find){
 			l=pivot+1;

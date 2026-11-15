@@ -4,7 +4,6 @@
 
 using namespace std;
 using namespace std::chrono;
-
 int bisect(vector<int>& array,int find, int st,int end){
 	int r=end;
 	int l=st;
@@ -25,7 +24,6 @@ int bisect(vector<int>& array,int find, int st,int end){
 	}
 	return l;
 }
-
 bool exponential_search(vector<int>& a1,vector<int>& a2){
 	int lena2=a2.size();
 	int start=0;
@@ -33,7 +31,7 @@ bool exponential_search(vector<int>& a1,vector<int>& a2){
 	int step=1;
 	int added=step-1;
 	for (auto i :a1){
-		while (a2[start+added]<i and (start+added)<lena2){
+		while ((start+added)<lena2 and a2[start+added]<i ){
 			step=step*2;
 			added=step-1;}
 		if ((start+added)<lena2){
@@ -57,6 +55,7 @@ bool exponential_search(vector<int>& a1,vector<int>& a2){
 	}
 	return false;
 }
+
 
 
 int main() {
